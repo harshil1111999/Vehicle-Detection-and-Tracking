@@ -3,13 +3,13 @@ This repository contains a Python script for vehicle detection, tracking, and sp
 
 weights - https://drive.google.com/drive/folders/1Ld_FgcD9x1Q7HfC0ZxiNeVf2M4-Y4EHt?usp=sharing
 
-Commands to run - 
-# save yolov4 model
+## Commands to run - 
+### save yolov4 model
 python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4 --model yolov4
-# Run yolov4 deep sort object tracker on video
+### Run yolov4 deep sort object tracker on video
 python object_tracker.py --weights ./checkpoints/yolov4 --model yolov4 --video ./data/video/cars.mp4 --output ./outputs/cars.avi
 
-# save yolov4-tiny model
+### save yolov4-tiny model
 python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints/yolov4-tiny-416 --model yolov4 --tiny
-# Run yolov4-tiny object tracker
+### Run yolov4-tiny object tracker
 python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 --video ./data/video/cars.mp4 --output ./outputs/cars_tiny.avi --tiny
